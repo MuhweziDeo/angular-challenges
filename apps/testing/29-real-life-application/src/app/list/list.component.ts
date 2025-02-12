@@ -32,7 +32,8 @@ import { RowComponent } from './ui/row.component';
         type="text"
         matInput
         [formControl]="search"
-        placeholder="write an article" />
+        placeholder="write an article"
+        testId="search-input" />
     </mat-form-field>
 
     <ng-container *ngrxLet="vm$ as vm">

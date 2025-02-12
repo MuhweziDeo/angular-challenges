@@ -23,7 +23,10 @@ import { Ticket, TicketUser, User } from '../../backend.service';
     <li
       class="flex flex-grow items-center justify-between gap-5"
       [class.bg-green-200]="ticket.completed">
-      <button [routerLink]="['/detail', ticket.id]" class="flex flex-col gap-2">
+      <button
+        [routerLink]="['/detail', ticket.id]"
+        class="flex flex-col gap-2"
+        testId="link-button">
         <div>
           <span class="font-bold">Ticket:</span>
           {{ ticket.id }}
